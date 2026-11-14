@@ -1,0 +1,399 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vale ou Não | As promoções do dia que a Nega farejou</title>
+<meta name="description" content="As promoções do dia no Mercado Livre, conferidas uma a uma. Veja os achados dos vídeos e entre na lista da comunidade do WhatsApp.">
+<meta property="og:title" content="Vale ou não vale? As promoções do dia">
+<meta property="og:description" content="A Nega fareja, o João confere o preço. Tudo num lugar só.">
+<meta property="og:image" content="assets/capa-facebook-flow.png">
+<meta name="theme-color" content="#2b1261">
+<link rel="icon" href="assets/foto-perfil.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --uva:#2b1261; --uva-viva:#5a2be0; --lilas:#f1edfb; --linha:#e2dcf2; --tinta:#1a1426; --texto:#4a4358;
+  --olho:#c8e03c; --olho-esc:#4f6400; --preco:#ffd60a; --corte:#e5383b; --branco:#fff;
+  --titulo:"Unbounded",system-ui,sans-serif; --corpo:"Figtree",system-ui,sans-serif;
+  --m:clamp(20px,5.2vw,40px); --raio:20px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:70px}
+body{margin:0;font-family:var(--corpo);font-size:17px;line-height:1.55;color:var(--texto);background:var(--branco);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block} [hidden]{display:none!important}
+h1,h2,h3,h4{font-family:var(--titulo);color:var(--tinta);margin:0;line-height:1.08;letter-spacing:-.03em}
+p{margin:0} a{color:inherit}
+.cx{max-width:1120px;margin:0 auto;padding:0 var(--m)}
+:focus-visible{outline:3px solid var(--uva-viva);outline-offset:3px;border-radius:8px}
+
+/* botões */
+.bt{display:inline-flex;align-items:center;justify-content:center;font-family:var(--corpo);font-weight:700;font-size:17px;line-height:1.2;color:var(--tinta);background:var(--preco);border:0;border-radius:14px;padding:16px 22px;text-decoration:none;cursor:pointer;box-shadow:0 5px 0 #c9a600;transition:transform .12s,box-shadow .12s}
+.bt:active{transform:translateY(4px);box-shadow:0 1px 0 #c9a600}
+.bt[disabled]{opacity:.7;cursor:wait}
+
+/* topo */
+.topo{background:radial-gradient(90% 70% at 85% 100%,#6a3df0 0%,rgba(106,61,240,0) 60%),linear-gradient(180deg,#22104f 0%,var(--uva) 55%,#3a1a86 100%);color:#d9cff7;overflow:hidden}
+.barra{display:flex;align-items:center;gap:12px;padding-top:18px}
+.barra img{width:44px;height:44px;border-radius:50%;border:2px solid var(--olho)}
+.barra b{color:#fff;font-weight:700;font-size:16.5px;display:block;line-height:1.15}
+.barra span{font-size:13.5px}
+.barra a{margin-left:auto;color:#fff;font-weight:600;font-size:14.5px;text-decoration:none;padding:9px 15px;border-radius:999px;background:rgba(255,255,255,.12)}
+.capa{display:grid;gap:8px;padding-top:clamp(30px,7vw,60px)}
+.capa h1{color:#fff;font-weight:800;font-size:clamp(40px,11.6vw,84px);line-height:.98;text-wrap:balance}
+.capa .sub{font-size:18.5px;line-height:1.5;color:#e4dcfb;margin:18px 0 26px;max-width:32ch;text-wrap:pretty}
+.capa .outro{display:inline-block;margin:18px 0 0 4px;color:#fff;font-weight:600;font-size:15.5px;text-underline-offset:4px}
+.cena{position:relative;height:clamp(300px,82vw,440px);margin:14px calc(var(--m) * -1) 0}
+.cena .nega{position:absolute;left:-4%;bottom:-6px;width:min(58%,340px)}
+.vitrine{position:absolute;right:var(--m);top:18px;width:min(50%,270px);background:#fff;border-radius:18px;padding:10px 10px 14px;color:var(--tinta);text-decoration:none;transform:rotate(3deg);z-index:2;box-shadow:0 26px 50px -18px rgba(0,0,0,.6)}
+.vitrine .ft{aspect-ratio:1;border-radius:12px;background:#fff;display:grid;place-items:center;overflow:hidden}
+.vitrine .ft img{width:100%;height:100%;object-fit:contain}
+.vitrine b{display:block;font-weight:600;font-size:13.5px;line-height:1.25;margin:8px 2px 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vitrine .por{font-family:var(--titulo);font-weight:800;font-size:21px;letter-spacing:-.03em;margin:0 2px}
+.vitrine s{display:block;font-size:12.5px;color:#8a8399;margin:0 2px}
+.selo{position:absolute;left:-22px;top:-16px;font-family:var(--titulo);font-weight:800;font-size:17px;letter-spacing:-.01em;color:var(--olho-esc);background:var(--olho);padding:9px 13px;border-radius:10px;transform:rotate(-12deg);box-shadow:0 8px 16px -6px rgba(0,0,0,.5);animation:carimba .55s .5s cubic-bezier(.2,1.7,.4,1) both}
+@keyframes carimba{0%{transform:rotate(-30deg) scale(2.4);opacity:0}100%{transform:rotate(-12deg) scale(1);opacity:1}}
+
+/* abas */
+.abas{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+.abas .cx{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:10px;padding-bottom:10px}
+.abas .cx::-webkit-scrollbar{display:none}
+.abas a{flex:none;font-weight:600;font-size:15px;text-decoration:none;color:var(--texto);padding:9px 15px;border-radius:999px}
+.abas a.on{background:var(--tinta);color:#fff}
+
+/* seções */
+section{padding:clamp(52px,11vw,96px) 0}
+.cab{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 20px;margin-bottom:10px}
+.h2{font-weight:800;font-size:clamp(27px,7.6vw,46px);text-wrap:balance}
+.hora{font-weight:600;font-size:14px;color:var(--olho-esc);background:#eef6c4;padding:7px 13px;border-radius:999px}
+.guia{max-width:62ch;margin-bottom:26px;text-wrap:pretty}
+.miudo{font-size:14px;color:#7a7389;margin-top:22px;max-width:70ch}
+
+/* ofertas */
+.grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.of{position:relative;display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--linha);border-radius:var(--raio);padding:10px 10px 14px;text-decoration:none;color:var(--texto);transition:border-color .15s,transform .15s}
+.of:hover{border-color:var(--uva-viva);transform:translateY(-2px)}
+.of .ft{aspect-ratio:1;border-radius:13px;overflow:hidden;background:#fff;display:grid;place-items:center}
+.of .ft img{width:100%;height:100%;object-fit:contain}
+.of .menos{position:absolute;left:10px;top:10px;font-weight:700;font-size:13.5px;color:#fff;background:var(--corte);padding:4px 9px;border-radius:9px 0 9px 0}
+.of h3{font-family:var(--corpo);font-weight:600;font-size:14.5px;line-height:1.3;letter-spacing:0;color:var(--tinta);margin:10px 2px 6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em}
+.of s{font-size:13px;color:#8a8399;margin:0 2px}
+.of .por{font-family:var(--titulo);font-weight:800;font-size:clamp(19px,5.4vw,24px);letter-spacing:-.03em;color:var(--tinta);margin:0 2px;line-height:1.15}
+.of .por small{font-size:.6em;font-weight:600}
+.of .nota{font-size:13px;margin:6px 2px 0;color:#6d667c}
+.of .nota i{font-style:normal;color:#e0a100}
+.of .frete{align-self:flex-start;font-size:12.5px;font-weight:700;color:#0d7a4c;background:#dff5ea;padding:3px 8px;border-radius:7px;margin:8px 2px 0}
+.of .ir{margin:12px 2px 0;font-weight:700;font-size:14px;color:var(--uva-viva);margin-top:auto;padding-top:12px}
+.of.um{grid-column:1/-1;flex-direction:row;gap:14px;align-items:center;background:var(--lilas);border-color:transparent;padding:14px}
+.of.um .ft{flex:none;width:42%;border-radius:15px}
+.of.um .lado{display:flex;flex-direction:column;min-width:0}
+.of.um h3{font-size:16.5px;-webkit-line-clamp:3;margin-top:0;min-height:0}
+.of.um .por{font-size:clamp(26px,7.6vw,38px)}
+.of.um .menos{left:14px;top:14px}
+.vazio{grid-column:1/-1;background:var(--lilas);border-radius:var(--raio);padding:20px;font-weight:500}
+
+/* achados */
+.achados{background:var(--lilas)}
+.reel{margin-top:30px}
+.reel>h3{font-weight:800;font-size:clamp(20px,5.4vw,26px)}
+.reel>p{margin:8px 0 16px;max-width:52ch}
+.reel .qual{font-weight:700;font-size:13.5px;color:var(--uva-viva);margin-bottom:6px}
+.trilho{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--m) * -1);padding:4px var(--m) 14px;scrollbar-width:thin}
+.trilho .of{flex:none;width:min(62vw,230px);scroll-snap-align:start;border-color:transparent}
+.novo{margin-top:22px;border:2px dashed #c9bdea;border-radius:var(--raio);padding:18px 20px;font-weight:500;max-width:520px}
+
+/* dores */
+.dores .painel{position:relative;display:grid;gap:0}
+.dor{padding:24px 0;border-top:1.5px solid var(--linha);display:grid;gap:10px}
+.dor:last-child{border-bottom:1.5px solid var(--linha)}
+.dor h3{font-family:var(--corpo);font-weight:700;font-size:21px;letter-spacing:-.01em;line-height:1.2}
+.dor .sai{display:flex;gap:10px;align-items:flex-start;font-weight:500;color:var(--tinta)}
+.dor .sai b{flex:none;font-family:var(--titulo);font-weight:800;font-size:11.5px;color:var(--olho-esc);background:var(--olho);padding:5px 8px;border-radius:7px;transform:rotate(-5deg);margin-top:1px}
+.folgada{width:min(52%,230px);margin:0 0 -34px auto;position:relative;z-index:1}
+
+/* quem */
+.quem{background:var(--tinta);color:#cfc8de}
+.quem .h2{color:#fff}
+.quem .par{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:start;margin-top:26px}
+.quem .par img{width:96px;height:96px;border-radius:24px;object-fit:cover}
+.quem p+p{margin-top:12px}
+.quem b{color:#fff}
+
+/* lista */
+.lista{background:linear-gradient(180deg,var(--uva) 0%,#1d0c45 100%);color:#d9cff7;overflow:hidden}
+.lista .h2{color:#fff}
+.lista .duas{display:grid;gap:28px}
+.lista .sub{margin:16px 0 0;font-size:18px;max-width:40ch}
+.claro{margin-top:20px;background:rgba(255,255,255,.1);border-left:4px solid var(--olho);border-radius:0 14px 14px 0;padding:14px 16px;font-size:15.5px;color:#fff;max-width:46ch}
+.ganha{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px;max-width:46ch}
+.ganha li{display:grid;grid-template-columns:22px 1fr;gap:10px}
+.ganha li::before{content:"";width:14px;height:14px;border-radius:4px;background:var(--olho);margin-top:6px}
+.celular{width:min(46%,210px);margin:26px 0 -18px;position:relative;z-index:1}
+form{background:#fff;color:var(--texto);border-radius:24px;padding:22px;position:relative;z-index:2}
+form h3{font-family:var(--corpo);font-weight:700;font-size:21px;letter-spacing:-.01em;margin-bottom:16px}
+label.campo{display:block;font-weight:700;font-size:14.5px;color:var(--tinta);margin-bottom:14px}
+label.campo input{display:block;width:100%;margin-top:6px;font:inherit;font-weight:400;font-size:17px;color:var(--tinta);padding:14px 15px;border-radius:13px;border:1.5px solid var(--linha);background:#faf8ff}
+label.campo input:focus{outline:none;border-color:var(--uva-viva);background:#fff}
+.aceite{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:13.5px;line-height:1.4;margin:4px 0 18px}
+.aceite input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--uva-viva)}
+form .bt{width:100%}
+#msg-erro{color:#c0261a;font-weight:700;font-size:14.5px;min-height:20px;margin-top:12px}
+.nota-f{font-size:13.5px;margin-top:10px}
+.oculto{position:absolute;left:-9999px}
+.pronto{background:#fff;color:var(--texto);border-radius:24px;padding:22px;display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center;position:relative;z-index:2}
+.pronto h3{font-family:var(--corpo);font-weight:700;font-size:22px;letter-spacing:-.01em;margin-bottom:8px}
+.pronto a{color:var(--uva-viva);font-weight:700}
+
+footer{background:#140a30;color:#9d93b8;font-size:14px;padding:34px 0 44px}
+footer .redes{display:flex;gap:18px;margin-bottom:16px}
+footer .redes a{color:#fff;font-weight:700;text-decoration:none}
+footer p{max-width:70ch;margin-top:8px}
+
+@media (min-width:560px){ .grade{grid-template-columns:repeat(3,minmax(0,1fr))} .of.um{grid-column:span 3} .of.um .ft{width:30%} }
+@media (min-width:900px){
+  body{font-size:18px}
+  .capa{grid-template-columns:1.05fr .95fr;align-items:end;gap:40px}
+  .cena{margin:0;height:500px} .cena .nega{left:0;width:290px} .vitrine{right:0;width:250px;top:30px}
+  .grade{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px} .of.um{grid-column:span 2} .of.um .ft{width:44%}
+  .trilho{margin:0;padding:4px 0 14px} .trilho .of{width:220px}
+  .dores .cx{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start} .dores .esq{position:sticky;top:90px} .folgada{margin:30px 0 0;width:260px}
+  .quem .par{grid-template-columns:140px 1fr;gap:28px;max-width:820px} .quem .par img{width:140px;height:140px}
+  .lista .duas{grid-template-columns:1fr 440px;gap:70px;align-items:start} .celular{width:230px}
+}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .selo{animation:none} .of{transition:none} }
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="cx">
+    <div class="barra">
+      <img src="assets/foto-perfil.png" alt="">
+      <div><b>Vale ou Não</b><span>ofertas com a Nega</span></div>
+      <a href="https://www.instagram.com/valeounao_ofertas/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="capa">
+      <div>
+        <h1>Vale ou não vale?</h1>
+        <p class="sub">A Nega fareja as promoções do Mercado Livre todo dia. Eu confiro o preço e deixo aqui só o que compensa.</p>
+        <a class="bt" href="#ofertas">Ver as promoções de hoje</a><br>
+        <a class="outro" href="#lista">Entrar na lista do WhatsApp</a>
+      </div>
+      <div class="cena">
+        <a class="vitrine" id="vitrine" href="#ofertas" hidden>
+          <span class="selo">Vale!</span>
+          <span class="ft"><img id="v-foto" src="" alt=""></span>
+          <b id="v-nome"></b><s id="v-de"></s><span class="por" id="v-por"></span>
+        </a>
+        <img class="nega" src="assets/gato-aponta.png" width="624" height="700" alt="A Nega, gata preta de peito branco, apontando para a oferta do dia">
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="abas" aria-label="Seções da página"><div class="cx">
+  <a href="#ofertas" data-s="ofertas">Promoções do dia</a>
+  <a href="#achados" data-s="achados">Achados dos vídeos</a>
+  <a href="#lista" data-s="lista">Lista do WhatsApp</a>
+</div></nav>
+
+<main>
+<section id="ofertas">
+  <div class="cx">
+    <div class="cab">
+      <h2 class="h2">Promoções do dia</h2>
+      <span class="hora" id="hora">Carregando</span>
+    </div>
+    <p class="guia">O preço é o da hora em que a Nega olhou. O Mercado Livre muda sem avisar, então confira no anúncio antes de comprar.</p>
+    <div class="grade" id="grade"></div>
+    <p class="miudo">Alguns links podem ser de afiliado. Se você comprar por eles, eu posso receber uma comissão, e o preço pra você não muda.</p>
+  </div>
+</section>
+
+<section class="achados" id="achados">
+  <div class="cx">
+    <h2 class="h2">Achados dos vídeos</h2>
+    <p class="guia" style="margin-top:12px;margin-bottom:0">Viu um reel da Nega? Os produtos de cada vídeo ficam aqui, com o link aberto. Não precisa de cadastro.</p>
+    <div id="reels"></div>
+    <p class="novo">Cada reel novo ganha um bloco aqui em cima. Os mais antigos descem.</p>
+  </div>
+</section>
+
+<section class="dores">
+  <div class="cx">
+    <div class="esq">
+      <h2 class="h2">Já caiu numa dessas?</h2>
+      <img class="folgada" src="assets/gato-deitado.png" width="700" height="455" alt="A Nega deitada, tranquila">
+    </div>
+    <div class="painel">
+      <div class="dor">
+        <h3>O "desconto" que não é desconto</h3>
+        <p>O preço riscado parece enorme, mas ninguém mostra quanto o produto custava de verdade.</p>
+        <p class="sai"><b>Vale</b><span>Aqui o preço de hoje vem na frente, com a nota e quantos já compraram.</span></p>
+      </div>
+      <div class="dor">
+        <h3>Uma hora rolando oferta</h3>
+        <p>Você abre o aplicativo pra comprar uma coisa e sai 40 minutos depois sem comprar nada.</p>
+        <p class="sai"><b>Vale</b><span>As ofertas já chegam separadas. Você bate o olho e decide.</span></p>
+      </div>
+      <div class="dor">
+        <h3>Saber da promoção tarde demais</h3>
+        <p>Quando alguém te conta, o preço já subiu ou o produto acabou.</p>
+        <p class="sai"><b>Vale</b><span>Quem está na lista recebe o convite da comunidade antes de todo mundo.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quem">
+  <div class="cx">
+    <h2 class="h2">Quem está por trás da Nega</h2>
+    <div class="par">
+      <img src="assets/foto-perfil.png" alt="A Nega na foto do perfil Vale ou Não">
+      <div>
+        <p>Eu sou o <b>João Gabriel</b>, da JGA, em Sete Lagoas, Minas. Esta página e a conta <b>@valeounao_ofertas</b> são minhas.</p>
+        <p>A Nega dá nome à conta, e existe uma de verdade aqui em casa. Ela fareja a promoção, eu confiro o preço do dia, e você decide com calma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lista" id="lista">
+  <div class="cx duas">
+    <div>
+      <h2 class="h2">Entre na lista da comunidade do WhatsApp</h2>
+      <p class="sub">As melhores promoções vão chegar direto no seu celular, sem você precisar procurar.</p>
+      <p class="claro">A comunidade ainda não abriu. Hoje você entra na lista de espera, e o convite chega quando ela abrir.</p>
+      <ul class="ganha">
+        <li>Convite antes de todo mundo quando a comunidade abrir</li>
+        <li>Os 20 melhores preços da Black Friday, enviados perto da data</li>
+        <li>De graça, e você sai quando quiser</li>
+      </ul>
+      <img class="celular" src="assets/gato-celular.png" width="637" height="700" alt="A Nega mostrando o celular">
+    </div>
+    <div>
+      <form id="form-lead" data-slug="b-lista-whatsapp" novalidate>
+        <h3>Guardar meu lugar na lista</h3>
+        <label class="campo">Seu nome<input name="nome" type="text" autocomplete="name" required></label>
+        <label class="campo">E-mail<input name="email" type="email" autocomplete="email" inputmode="email" required></label>
+        <label class="campo">Celular com DDD<input name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="31 99999-9999" required></label>
+        <input class="oculto" name="site_url" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="aceite"><input type="checkbox" name="consentimento" required><span>Aceito receber o convite da comunidade, a lista da Black Friday e ofertas da JGA por WhatsApp e e-mail, e concordo com a <a href="https://gojira1998.github.io/jga-site/privacidade.html" target="_blank" rel="noopener">política de privacidade</a>. Posso sair quando quiser.</span></label>
+        <button class="bt" type="submit">Entrar na lista</button>
+        <p id="msg-erro" role="alert"></p>
+        <p class="nota-f">Seus dados ficam só com a JGA. As promoções desta página continuam abertas pra todo mundo.</p>
+      </form>
+      <div class="pronto" id="pronto" hidden>
+        <img src="assets/gato-joinha.png" width="554" height="700" alt="A Nega fazendo joinha">
+        <div><h3>Você está na lista</h3><p>O convite chega quando a comunidade abrir. Enquanto isso, veja as <a href="#ofertas">promoções de hoje</a>.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="cx">
+    <div class="redes">
+      <a href="https://www.instagram.com/valeounao_ofertas/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@valeounao_ofertas" target="_blank" rel="noopener">TikTok</a>
+    </div>
+    <p>Aviso de afiliado: alguns links desta página podem ser de afiliado do Mercado Livre. Você paga o mesmo preço e eu posso receber uma pequena comissão.</p>
+    <p>Preços e disponibilidade mudam. Confira sempre no anúncio. Página de João Gabriel, JGA, Sete Lagoas, MG.</p>
+  </div>
+</footer>
+
+<script src="leads-config.js"></script>
+<script src="dados.js"></script>
+<script>
+(function () {
+  function brl(n) { return n.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function vend(o) {
+    if (typeof o.vendidos !== "number") return (o.vendidos_txt || "").replace(/(\d)mil/, "$1 mil");
+    return o.vendidos >= 1000 ? "+" + Math.round(o.vendidos / 1000) + " mil vendidos" : o.vendidos + " vendidos";
+  }
+  function cartao(o, um) {
+    var pr = brl(o.preco).split(",");
+    var txt = '<h3>' + esc(o.nome) + '</h3><s>de R$ ' + brl(o.preco_de) + '</s><span class="por"><small>R$</small> ' + pr[0] + '<small>,' + pr[1] + '</small></span>'
+      + '<span class="nota"><i>★</i> ' + String(o.nota).replace(".", ",") + ' com ' + esc(vend(o)) + '</span>'
+      + (o.frete_gratis ? '<span class="frete">Frete grátis</span>' : '') + '<span class="ir">Ver no Mercado Livre</span>';
+    return '<a class="of' + (um ? ' um' : '') + '" href="' + esc(o.link) + '" target="_blank" rel="noopener sponsored nofollow"><span class="menos">' + o.desconto + '% a menos</span>'
+      + '<span class="ft"><img loading="lazy" src="' + esc(o.foto) + '" alt=""></span>' + (um ? '<span class="lado">' + txt + '</span>' : txt) + '</a>';
+  }
+  function pegar(arq, reserva) {
+    return fetch(arq + "?v=" + Date.now()).then(function (r) { if (!r.ok) throw 0; return r.json(); }).catch(function () { if (reserva) return reserva; throw 0; });
+  }
+
+  // promoções do dia
+  var grade = document.getElementById("grade"), hora = document.getElementById("hora");
+  pegar("ofertas.json", window.NEGA_OFERTAS).then(function (d) {
+    var dt = new Date(d.atualizado_em), h = pad(dt.getHours()) + ":" + pad(dt.getMinutes());
+    hora.textContent = "Atualizado " + (dt.toDateString() === new Date().toDateString() ? "hoje às " : "em " + pad(dt.getDate()) + "/" + pad(dt.getMonth() + 1) + " às ") + h;
+    grade.innerHTML = d.ofertas.slice(0, 15).map(function (o, i) { return cartao(o, i === 0); }).join("");
+    var o = d.ofertas[0], pr = brl(o.preco);
+    document.getElementById("v-foto").src = o.foto; document.getElementById("v-nome").textContent = o.nome;
+    document.getElementById("v-de").textContent = "de R$ " + brl(o.preco_de); document.getElementById("v-por").textContent = "R$ " + pr;
+    document.getElementById("vitrine").hidden = false;
+  }).catch(function () {
+    hora.textContent = "Sem horário";
+    grade.innerHTML = '<p class="vazio">As ofertas não carregaram agora. Volte daqui a pouco ou veja os posts da Nega no Instagram.</p>';
+  });
+
+  // achados dos vídeos
+  var reels = document.getElementById("reels");
+  pegar("achados.json", window.NEGA_ACHADOS).then(function (d) {
+    reels.innerHTML = d.videos.map(function (v, i) {
+      return '<article class="reel"><p class="qual">Reel ' + (d.videos.length - i) + '</p><h3>' + esc(v.titulo) + '</h3><p>' + esc(v.chamada) + '</p><div class="trilho">' + v.produtos.map(function (o) { return cartao(o, false); }).join("") + '</div></article>';
+    }).join("");
+  }).catch(function () { reels.innerHTML = '<p class="vazio" style="margin-top:24px">Os achados não carregaram agora. Volte daqui a pouco.</p>'; });
+
+  // aba ativa
+  var links = document.querySelectorAll(".abas a");
+  if ("IntersectionObserver" in window) {
+    var vis = {}, ob = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { vis[e.target.id] = e.isIntersecting; });
+      var at = ["ofertas", "achados", "lista"].filter(function (k) { return vis[k]; })[0];
+      links.forEach(function (a) { a.classList.toggle("on", a.dataset.s === at); });
+    }, { rootMargin: "-20% 0px -60% 0px" });
+    ["ofertas", "achados", "lista"].forEach(function (k) { ob.observe(document.getElementById(k)); });
+  }
+
+  // lista de espera: grava na tabela leads (Supabase, só inserção)
+  var form = document.getElementById("form-lead"), pronto = document.getElementById("pronto");
+  var slug = form.getAttribute("data-slug"), chave = "jga_lead_" + slug, inicio = Date.now(), p = new URLSearchParams(location.search);
+  var local = location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.protocol === "file:";
+  function entrou() { form.hidden = true; pronto.hidden = false; }
+  try { if (localStorage.getItem(chave) === "1") { entrou(); return; } } catch (e) {}
+  if (p.get("preview") === "1" && local) { entrou(); return; }
+  var msg = document.getElementById("msg-erro"), botao = form.querySelector("button");
+  function erro(t) { msg.textContent = t || ""; }
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault(); erro("");
+    var f = new FormData(form);
+    if (f.get("site_url")) return;
+    if (Date.now() - inicio < 3000) { erro("Aguarde um instante e envie de novo."); return; }
+    var nome = (f.get("nome") || "").trim(), zap = (f.get("whatsapp") || "").replace(/\D/g, ""), email = (f.get("email") || "").trim().toLowerCase();
+    if (nome.length < 2) { erro("Escreva o seu nome."); return; }
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)) { erro("Confira o e-mail."); return; }
+    if (zap.length < 10 || zap.length > 13) { erro("Confira o celular, com DDD. Exemplo: 31 99999-9999."); return; }
+    if (!f.get("consentimento")) { erro("Marque a caixa de aceite para entrar na lista."); return; }
+    var cfg = window.JGA_LEADS || {};
+    if (!cfg.url || !cfg.anonKey) { erro("O cadastro está em ajuste. Tente de novo mais tarde."); return; }
+    if (p.get("teste") === "1" && local) { erro("Modo teste: tudo validado, nada foi enviado."); return; }
+    botao.disabled = true; botao.textContent = "Enviando...";
+    fetch(cfg.url.replace(/\/$/, "") + "/rest/v1/" + (cfg.tabela || "leads"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "apikey": cfg.anonKey, "Authorization": "Bearer " + cfg.anonKey, "Prefer": "return=minimal" },
+      body: JSON.stringify({ nome: nome, whatsapp: zap, email: email, post_slug: slug, mentoria: false, consentimento: true, origem: (p.get("utm_source") || document.referrer || "direto").slice(0, 120) })
+    }).then(function (r) {
+      if (!r.ok && r.status !== 409) throw new Error("status " + r.status);
+      try { localStorage.setItem(chave, "1"); } catch (e) {}
+      entrou(); pronto.scrollIntoView({ behavior: "smooth", block: "center" });
+    }).catch(function () { erro("Não consegui enviar agora. Tente de novo em instantes."); botao.disabled = false; botao.textContent = "Entrar na lista"; });
+  });
+})();
+</script>
+</body>
+</html>
