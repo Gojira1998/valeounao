@@ -1,14 +1,14 @@
 {
- "atualizado_em": "2026-11-23T12:33-03:00",
+ "atualizado_em": "2026-11-25T14:13-03:00",
  "fonte": "Mercado Livre, preço conferido pela Nega",
  "ofertas": [
   {
    "id": "MLB5735055650",
-   "nome": "Fritadeira Air Fryer",
-   "foto": "assets/prod/s01.jpg",
-   "preco": 243.51,
+   "nome": "Fritadeira Air Fryer 5,5L",
+   "foto": "assets/prod/t01.jpg",
+   "preco": 237.91,
    "preco_de": 739.68,
-   "desconto": 67,
+   "desconto": 68,
    "nota": 4.9,
    "vendidos": 10000,
    "vendidos_txt": "+10mil vendidos",
@@ -16,6 +16,51 @@
    "selo": "BLACK FRIDAY",
    "frete_gratis": true,
    "link": "https://meli.la/1C3gV2B"
+  },
+  {
+   "id": "MLB3225819794",
+   "nome": "Balança de bioimpedância",
+   "foto": "assets/prod/t02.jpg",
+   "preco": 102.9,
+   "preco_de": 279.9,
+   "desconto": 63,
+   "nota": 4.9,
+   "vendidos": 100000,
+   "vendidos_txt": "+100mil vendidos",
+   "nicho": "Fitness e Suplementos",
+   "selo": "OFERTA IMPERDÍVEL",
+   "frete_gratis": true,
+   "link": "https://meli.la/2rVvAAG"
+  },
+  {
+   "id": "MLB5578085972",
+   "nome": "Árvore de Natal 2,10 m",
+   "foto": "assets/prod/t03.jpg",
+   "preco": 229.99,
+   "preco_de": 562.38,
+   "desconto": 59,
+   "nota": 4.9,
+   "vendidos": 10000,
+   "vendidos_txt": "+10mil vendidos",
+   "nicho": "Casa e Cozinha",
+   "selo": "BLACK FRIDAY",
+   "frete_gratis": true,
+   "link": "https://meli.la/1qhw8PQ"
+  },
+  {
+   "id": "MLB2119399432",
+   "nome": "Teclado e mouse Logitech MK345",
+   "foto": "assets/prod/t04.jpg",
+   "preco": 161.91,
+   "preco_de": 229.9,
+   "desconto": 30,
+   "nota": 4.8,
+   "vendidos": 50000,
+   "vendidos_txt": "+50mil vendidos",
+   "nicho": "",
+   "selo": "OFERTA IMPERDÍVEL",
+   "frete_gratis": true,
+   "link": "https://meli.la/33jPpiE"
   },
   {
    "id": "MLB4839435023",
@@ -46,21 +91,6 @@
    "selo": "OFERTA IMPERDÍVEL",
    "frete_gratis": true,
    "link": "https://meli.la/2pbpsYr"
-  },
-  {
-   "id": "MLB3225819794",
-   "nome": "Balança de bioimpedância",
-   "foto": "assets/prod/s04.jpg",
-   "preco": 102.9,
-   "preco_de": 279.9,
-   "desconto": 63,
-   "nota": 4.9,
-   "vendidos": 100000,
-   "vendidos_txt": "+100mil vendidos",
-   "nicho": "Fitness e Suplementos",
-   "selo": "OFERTA IMPERDÍVEL",
-   "frete_gratis": true,
-   "link": "https://meli.la/2rVvAAG"
   },
   {
    "id": "MLB5265379346",
